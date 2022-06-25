@@ -56,37 +56,38 @@ def DurandKerner(c, tol = 1e-20, itermax=1000, check_progress=False, debugfile='
     return r, err, iters
 
 
-tol = 1e-20
-itermax = 1000
-check_progress = False
+if __name__=='__main__':
+    tol = 1e-20
+    itermax = 1000
+    check_progress = False
 
-c = [1, -3, 3, -5]
-print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
-print()
+    c = [1, -3, 3, -5]
+    print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
+    print()
 
 
 
-c = [1, -2, 1]
-print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
-print()
+    c = [1, -2, 1]
+    print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
+    print()
 
-c = [1, -5,6]
-print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
-print()
+    c = [1, -5,6]
+    print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
+    print()
 
-c = [1, -2, 0]
-print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
-print()
+    c = [1, -2, 0]
+    print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
+    print()
 
-c = [1, -3.1415992654]
-print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
-print()
+    c = [1, -3.1415992654]
+    print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
+    print()
 
-c = [1, 2, 1]
-print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
-print()
+    c = [1, 2, 1]
+    print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
+    print()
 
-c = [1, 0, 1]
-print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
-print()
+    c = [1, 0, 1]
+    print("Final roots, error, iterations: ", DurandKerner(c, tol=tol, itermax=itermax, check_progress=check_progress))
+    print()
 
